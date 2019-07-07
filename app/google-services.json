@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1085380068520",
+    "firebase_url": "https://superfly-208d8.firebaseio.com",
+    "project_id": "superfly-208d8",
+    "storage_bucket": "superfly-208d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085380068520:android:633d8d9303cecd04",
+        "android_client_info": {
+          "package_name": "com.example.superfly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085380068520-18bvpjrsl0edi51qgef3c5h41t191b1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.superfly",
+            "certificate_hash": "ea5e73a6a51cf8f63f600599619c88357621f4a2"
+          }
+        },
+        {
+          "client_id": "1085380068520-g342fg1ku6lurechnqpjtq7km8hinkoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Kb6q2ndFJheICjXFKPtgY74kd8viPEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085380068520-g342fg1ku6lurechnqpjtq7km8hinkoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
