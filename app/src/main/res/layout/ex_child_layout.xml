@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/childLay"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    >
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:layout_marginTop="12dp"
+
+              android:gravity="center"
+              android:textSize="18sp"
+              android:text="Fx200 Chopper"/>
+
+
+    <View
+            android:layout_toStartOf="@id/av"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+            android:id="@+id/av"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true" android:layout_marginTop="12dp"
+
+            android:gravity="center_vertical|center"
+            android:textColor="@android:color/darker_gray"
+            android:text="Available"
+            android:textSize="12sp"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/av"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/darker_gray"/>
+
+
+</RelativeLayout>
+</LinearLayout>

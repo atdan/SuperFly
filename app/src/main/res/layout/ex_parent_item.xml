@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="12dp"
+              android:layout_margin="12dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_margin="8dp"
+    >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_marginTop="12dp"
+
+                  android:gravity="center"
+                  android:textSize="18sp"
+                  android:text="Fx200 Chopper"/>
+
+
+        <View
+                android:layout_toStartOf="@id/av"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"/>
+
+        <TextView
+                android:id="@+id/av"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" android:layout_marginTop="12dp"
+
+                android:gravity="center_vertical|center"
+                android:textColor="@android:color/darker_gray"
+                android:text="Available"
+                android:textSize="12sp"/>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/av"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/darker_gray"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_margin="4dp"
+                  android:layout_marginTop="2dp"
+                  android:paddingTop="2dp"
+                  android:id="@+id/regOwner"
+                  android:padding="4dp"
+                  android:layout_height="wrap_content">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:backgroundTint="#DBDBDB"
+                      android:background="#DBDBDB"
+                      android:weightSum="2"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:text="Registered Owner"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1" android:layout_height="wrap_content"
+                      android:textColor="@android:color/black"
+                      android:padding="4dp"
+                      android:text="Samuel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_margin="4dp"
+                  android:layout_marginTop="2dp"
+                  android:id="@+id/pilotLay"
+                  android:padding="4dp"
+                  android:layout_height="wrap_content">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:backgroundTint="#DBDBDB"
+
+                      android:background="#DBDBDB"
+                      android:weightSum="2"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:text="Pilot"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="0dp"
+                      android:id="@+id/pilot"
+                      android:layout_weight="1" android:layout_height="wrap_content"
+                      android:textColor="@android:color/black"
+                      android:padding="4dp"
+                      android:text="Samuel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_margin="4dp"
+                  android:layout_marginTop="2dp"
+                  android:id="@+id/speedLay"
+                  android:padding="4dp"
+                  android:layout_height="wrap_content">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:backgroundTint="#DBDBDB"
+
+                      android:background="#DBDBDB"
+                      android:weightSum="2"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:text="Speed"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="0dp"
+                      android:id="@+id/speed"
+                      android:layout_weight="1" android:layout_height="wrap_content"
+                      android:textColor="@android:color/black"
+                      android:padding="4dp"
+                      android:text="500km/h"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_margin="4dp"
+                  android:layout_marginTop="2dp"
+                  android:id="@+id/capaLay"
+                  android:padding="4dp"
+                  android:layout_height="wrap_content">
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:backgroundTint="#DBDBDB"
+
+                      android:background="#DBDBDB"
+                      android:weightSum="2"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:padding="4dp"
+                      android:text="Capacity"
+                      android:textColor="@android:color/black"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="0dp"
+                      android:id="@+id/capacity"
+                      android:layout_weight="1" android:layout_height="wrap_content"
+                      android:textColor="@android:color/black"
+                      android:padding="4dp"
+                      android:text="5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+              android:textColor="@android:color/black"
+              android:textSize="14sp"
+    android:text="Flight Schedule"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+                  android:backgroundTint="#ffDBDBDb"
+                  android:background="#ffdbdbdb"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!---->
+                  <!--android:textColor="@android:color/black"-->
+                  <!--android:text="Monday"-->
+        <!--/>-->
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                  android:textColor="@android:color/black"
+                  android:text="Monday"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                  android:textColor="@android:color/black"
+                  android:text="7:00   -  7:45 \n12:00 - 12:45\n5:00   -  5:45"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                  android:textColor="@android:color/black"
+                  android:text="Wednesday"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+                  android:textColor="@android:color/black"
+                  android:text="7:00   -  7:45 \n12:00 - 12:45\n5:00   -  5:45"
+        />
+    </LinearLayout>
+
+</LinearLayout>
