@@ -242,7 +242,7 @@ class ProfilePilotActivity : AppCompatActivity() {
             val childRef = storageReference.child("Users")
                 .child(firebaseUser!!.uid)
                 .child("profile picture")
-                .child(Objects.requireNonNull(imageHoldUri!!.lastPathSegment))
+                .child((imageHoldUri!!.lastPathSegment).toString())
 
             uploadTask = childRef.putFile(saveUri!!)
 
@@ -359,7 +359,7 @@ class ProfilePilotActivity : AppCompatActivity() {
                 progressDialog.setTitle("Saving profile")
                 progressDialog.setMessage("please wait...")
                 progressDialog.show()
-                val childRef = storageReference.child("User Profile").child(Objects.requireNonNull(imageHoldUri!!.lastPathSegment))
+                val childRef = storageReference.child("User Profile").child((imageHoldUri!!.lastPathSegment).toString())
 
                 val profilePicUrl = imageHoldUri!!.lastPathSegment
 

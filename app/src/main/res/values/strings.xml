@@ -21,4 +21,27 @@
         <u>continue</u>
     </string>
     <string name="title_activity_landing_owners">LandingOwnersActivity</string>
+    <string-array name="register">
+        <item>User</item>
+        <item>Pilot</item>
+        <item>Owner</item>
+    </string-array>
+    <string-array name="locale">
+        <item>Within Lagos</item>
+        <item>Outside Lagos</item>
+    </string-array>
+    <string-array name="lease">
+        <item>3 months</item>
+        <item>6 months</item>
+        <item>12 months</item>
+    </string-array>
+    <string-array name="schedule_d">
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+    </string-array>
+    <string-array name="schedule_f">
+        <item>1 flight</item>
+        <item>2 flights</item>
+    </string-array>
 </resources>

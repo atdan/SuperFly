@@ -108,6 +108,7 @@ class LandingActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
 
 
 
+
         spinner = findViewById<Spinner>(R.id.spinner)
 
         if (timeSpinner != null){
@@ -171,6 +172,11 @@ class LandingActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     fun cont(view: View){
 
         val intent = Intent(this, BookingActivity::class.java)
+        startActivity(intent)
+    }
+    fun prof(view: View){
+
+        val intent = Intent(this, ProfilePilotActivity::class.java)
         startActivity(intent)
     }
 
@@ -474,7 +480,8 @@ class LandingActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
     }
 
      fun loadPlacePicker(view: View) {
-        val builder = PlacePicker.IntentBuilder()
+
+         val builder = PlacePicker.IntentBuilder()
 
         try {
             startActivityForResult(builder.build(this@LandingActivity), PLACE_PICKER_REQUEST)

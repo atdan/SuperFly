@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Basic Info"
+        android:layout_marginLeft="30dp"
+        android:textSize="27sp"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/firstName"
+            android:hint="First name"
+            android:padding="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/lastName"
+            android:hint="Last name"
+            android:padding="8dp"
+
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/phone"
+            android:hint="Phone number"
+            android:padding="8dp"
+            android:inputType="phone"
+            android:layout_marginEnd="12dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:id="@+id/u_one"
+        android:textSize="20sp"
+        android:background="@drawable/butt"/>
+
+
+
+
+
+</LinearLayout>

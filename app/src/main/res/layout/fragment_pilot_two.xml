@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PilotTwo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Certification"
+            android:layout_marginLeft="30dp"
+            android:textSize="27sp"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/o_firstName"
+                android:hint="National ID"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="12dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/o_lastName"
+                android:hint="Flying License Number"
+                android:padding="8dp"
+
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="12dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:layout_gravity="center_horizontal"
+                android:text="Upload scanned image of license (.pdf)"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Upload file"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14sp"
+
+                android:background="#E2E1E1"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Daily Schedule"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:entries="@array/schedule_d"
+            android:layout_marginTop="15dp"
+            android:id="@+id/schedule_d"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Flight Schedule"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:entries="@array/schedule_f"
+            android:layout_marginTop="15dp"
+            android:id="@+id/schedule_f"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Next"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/p_two"
+            android:textSize="20sp"
+            android:background="@drawable/butt"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

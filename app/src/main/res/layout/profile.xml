@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:text="Welcome Daniel,"
+                android:layout_marginLeft="30dp"
+                android:textSize="29sp"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#000"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/ic_launcher_round"/>
+        </LinearLayout>
+
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:textSize="18sp"
+                android:id="@+id/password"
+                android:padding="8dp"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign in"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/sign_in"
+            android:textSize="20sp"
+            android:background="@drawable/butt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Not Daniel?"
+            android:id="@+id/sign_out"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Forgot Password?"
+            android:layout_marginTop="50dp"
+            android:textSize="22sp"
+            android:id="@+id/forgot_pass"
+            android:textStyle="bold"
+            android:textColor="#70E0F0" />
+
+
+
+    </LinearLayout>
+

@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -17,6 +18,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
         <activity
                 android:name=".LandingOwnersActivity"
                 android:label="@string/title_activity_landing_owners"
@@ -28,6 +30,11 @@
         </activity>
         <activity android:name=".BookingActivity">
         </activity>
+        <activity android:name=".UserTwo"/>
+        <activity android:name=".PilotThree" />
+        <activity android:name=".OwnerThree" />
+        <activity android:name=".PayStack"/>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -50,15 +57,16 @@
                 android:name=".LandingActivity"
                 android:label="@string/title_activity_landing"
                 android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".WelcomeActivity">
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".WelcomeActivity">
-        </activity>
-        <activity android:name=".MainActivity">
         </activity>
     </application>
 

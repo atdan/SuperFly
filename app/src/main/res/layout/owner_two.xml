@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Basic Info (Cont'd)"
+        android:layout_marginLeft="30dp"
+        android:textSize="27sp"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#000"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Operation Locale"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:entries="@array/locale"
+        android:id="@+id/locale"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Present Location"
+            android:textSize="18sp"
+            android:id="@+id/o_location"
+            android:padding="8dp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<com.google.android.material.textfield.TextInputLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginRight="30dp"-->
+    <!--android:layout_marginTop="10dp">-->
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:hint="Schedule for Helicopters"-->
+    <!--android:textSize="18sp"-->
+    <!--android:padding="8dp"-->
+    <!--android:inputType="text"/>-->
+    <!--</com.google.android.material.textfield.TextInputLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duration of Lease"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:entries="@array/lease"
+        android:id="@+id/lease"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Number of Helicopters for lease"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:id="@+id/num_h"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:id="@+id/o_two"
+        android:textSize="20sp"
+        android:background="@drawable/butt"/>
+
+</LinearLayout>

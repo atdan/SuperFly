@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Account Info"
+        android:layout_marginLeft="30dp"
+        android:textSize="27sp"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/firstName"
+            android:hint="Name of Bank"
+            android:padding="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/lastName"
+            android:hint="Bank Account Number"
+            android:padding="8dp"
+
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="12dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Bank Account Holder Name"
+            android:textSize="18sp"
+            android:id="@+id/email_a"
+            android:padding="8dp"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Sign up"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:id="@+id/sign_up"
+        android:textSize="20sp"
+        android:background="@drawable/butt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:text="By creating our account, you agree to our"
+        android:textSize="17sp"
+        android:textColor="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Terms and Conditions"
+        android:textSize="17sp"
+        android:id="@+id/terms"
+        android:textStyle="bold"
+        android:textColor="#000" />
+    </LinearLayout>
+</RelativeLayout>
